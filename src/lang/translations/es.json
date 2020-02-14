@@ -1,0 +1,18 @@
+{
+  "greeting": {
+    "hi": "Hola!",
+    "name": "Soy Gonzalo Hirsch",
+    "software_engineering": "Estudiante de Ingeniería en Informática",
+    "full_stack": "Desarrollador Full-Stack"
+  },
+  "middle": {
+    "love": "Amo",
+    "building": "construir software y building reliable, efficient",
+    "software": "software and experiences"
+  },
+  "general": {
+    "experience": "Experiencia",
+    "cv": "Curriculum Vitae",
+    "projects": "Proyectos"
+  }
+}
