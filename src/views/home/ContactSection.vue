@@ -1,15 +1,14 @@
 <template>
-  <v-container>
+  <v-container  class="text-basic">
     <v-layout
       text-center
       justify-center
       wrap
+      :class='$vuetify.breakpoint.xsOnly ? "about-section-small" : "about-section"'
     >
-    <h1>{{$t('contact.contact')}}</h1>
-      <v-flex xs12>
-      <v-row no-gutters cols='12'>
-        <v-col cols='12' sm='5'>
-          <h2>{{ $t('contact.send_me')}}</h2>
+    <h1 class="text-uppercase mb-6 contact-title">{{$t('contact.contact')}}</h1>
+      <h2 class="mt-4 mb-6 contact-subtitle">{{ $t('contact.send_me')}}</h2>
+          <!--
           <v-flex xs12>
           <v-text-field
             :label="$t('contact.subject')"
@@ -24,49 +23,44 @@
             v-model='body'
           ></v-textarea>
           </v-flex>
+          -->
           <v-flex xs12>
             <v-btn
-          outlined=""
-          :href='link'
-          :disabled="isDisabled"
-          @click="clearFields"
+            x-large
+            :href='link'
+            class="color-btn send-btn my-4"
+            dark
+            outlined
           >
-          {{ $t('contact.send')}}
+            <v-icon left>mdi-send</v-icon>
+            {{ $t('contact.send')}}
           </v-btn>
-          </v-flex>
-          </v-col>
-          <v-col cols='12' sm='2'>
-          <v-divider :vertical="$vuetify.breakpoint.smAndUp" :class=" $vuetify.breakpoint.smAndUp ? 'ma-0' : 'ma-4'"/>
-          </v-col>
-        <v-col cols='12' sm='5'>
-          <h2>{{ $t('contact.contact_me')}}</h2>
-          <h3>Gonzalo Hirsch</h3>
-          <p>{{ $t('contact.email')}}</p>
+
+          <h3 class="my-4 contact-text">Gonzalo Hirsch</h3>
+          <p class="contact-text">{{ $t('contact.email')}}</p>
           <v-flex>
             <v-btn
           fab
-          small
+          :small='!$vuetify.breakpoint.xsOnly'
           class='mx-2'
           href='https://github.com/GonzaloHirsch'
           target='_blank'>
             <v-icon>
-              mdi-github-circle
+              mdi-github
             </v-icon>
           </v-btn>
           <v-btn
           fab
-          small
+          :small='!$vuetify.breakpoint.xsOnly'
           class='mx-2'
           href='https://www.linkedin.com/in/gonzalo-hirsch-5b4854155/'
           target='_blank'>
             <v-icon>
-              mdi-linkedin-box
+              mdi-linkedin
             </v-icon>
           </v-btn>
           </v-flex>
-          </v-col>
-      </v-row>
-       </v-flex>
+          </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -79,11 +73,6 @@ export default {
     body: ''
   }),
   methods: {
-    clearFields: function () {
-      document.location.href = this.link
-      this.subject = ''
-      this.body = ''
-    }
   },
   computed: {
     link: function () {
@@ -92,10 +81,27 @@ export default {
       link += '&body='
       link += encodeURIComponent(this.body)
       return link
-    },
-    isDisabled: function () {
-      return this.subject === '' || this.body === ''
     }
   }
 }
 </script>
+
+<style>
+  @import './../../assets/styles/general.css';
+  @import './../../assets/styles/buttons.css';
+  @import './../../assets/styles/contact.css';
+
+  .about-section {
+    padding: 100px 150px;
+    text-align: center;
+  }
+
+  .about-section-small {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .send-btn {
+    padding: 30px;
+  }
+</style>

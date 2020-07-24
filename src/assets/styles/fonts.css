@@ -1,16 +1,3 @@
-.greeting-hi{
-    font-size: 2.5rem;
-}
-
-.greeting-name {
-    font-size: 4.5rem;
-}
-
-.greeting-sub {
-    font-size: 2.5rem;
-    font-weight: lighter;
-}
-
 .light-text {
     font-weight: lighter !important;
 }
@@ -24,30 +11,4 @@
     font-size: 1rem;
     font-weight: lighter;
     color: black;
-}
-
-@media (max-width: 650px) {
-    .greeting-hi{
-        font-size: 1.5rem;
-    }
-    
-    .greeting-name {
-        font-size: 2.25rem;
-    }
-    
-    .greeting-sub {
-        font-size: 1.25rem;
-        font-weight: lighter;
-    }
-
-    .rn-title {
-        font-size: 1.5rem;
-        font-weight: lighter;
-    }
-
-    .bottom-text {
-        font-size: 0.5rem;
-        font-weight: lighter;
-        color: black;
-    }
 }

@@ -1,0 +1,24 @@
+.text-basic {
+    color: white;
+}
+
+.text-primary {
+    color: #a73f85;
+}
+
+.text-secondary {
+    color: #3fa783;
+}
+
+.basic-background {
+    background-color: white;
+}
+
+.primary-background {
+    background-color: #a73f85;
+    max-width: 100%;
+}
+
+.secondary-background {
+    background-color: #3fa783;
+}

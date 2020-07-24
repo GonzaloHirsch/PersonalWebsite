@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueObserveVisibility from 'vue-observe-visibility'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -14,6 +15,8 @@ export const i18n = new VueI18n({
   fallbackLocale: 'en',
   messages
 })
+
+Vue.use(VueObserveVisibility)
 
 new Vue({
   router,

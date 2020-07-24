@@ -1,184 +1,174 @@
 {
-  "greeting": {
-    "hi": "Welcome!",
-    "my": "My name is",
-    "name": "Gonzalo Hirsch",
-    "software_engineering": "Software Engineering Student",
-    "full_stack": "Full-Stack Developer"
-  },
-  "middle": {
-    "love": "I <b style=\"color:lightcoral\">love</b>",
-    "building": "building <b>reliable</b>, <b>efficient</b>",
-    "software": "<b>software</b> and <b>experiences</b>",
-    "message": "My passion is building <b>reliable</b>, <b>efficient</b> <b>software</b> and <b>experiences</b>",
-    "process": "My process",
-    "process_design": "Design",
-    "process_design_description": "Use the best software engineering practices and the UX process to come up with intuitive and efficient solutions",
-    "process_build": "Build",
-    "process_build_description": "Use the best tools for each problem, in order to bring to life the designed solution",
-    "process_evaluate": "Evaluate",
-    "process_evaluate_description": "Thoroughly test the solution in order to find improvements and go back to the previous steps"
-  },
-  "contact": {
-    "send_me": "Send me an email",
-    "subject": "Subject",
-    "content": "Content",
-    "contact_me": "My Info",
-    "email": "hirschgonzalo@gmail.com",
-    "send": "Send",
-    "contact": "Contact"
-  },
-  "general": {
-    "experience": "Experience",
-    "cv": "CV",
-    "projects": "Projects"
-  },
-  "bottom": {
-    "made": "Made with <3 by Gonzalo Hirsch"
-  },
-  "rn": {
-    "title": "What's going on <b>right now?</b>"
-  },
-  "experience": {
-    "job":{
-      "title": "Work Experience"
+    "greeting": {
+        "hi": "Welcome!",
+        "my": "My name is",
+        "name": "Gonzalo Hirsch",
+        "description": "I'm an Argentina based Software Engineering Student and Full-Stack Developer focused on developing clean, user-friendly and fast experiences"
     },
-    "achievements":{
-      "title": "Achievements & Events",
-      "jpmorgan_hackathon_2019":{
-        "title":"JP Morgan's Code for Good",
-        "subtitle":"May 3 to May 4 - 2019",
-        "description":"We developed, alongside my team, a suite of applications that aimed to assis an NGO (Junior Achievement) in helping children find a profession.",
-        "chips":[
-          "Winner"
-        ],
-        "links":[
-          {
-            "title":"news",
-            "link":""
-          }
-        ]
-      },
-      "itba_hackathon_2018":{
-        "title":"ITBA Hackathon",
-        "subtitle":"Oct 6 2019",
-        "description":"We came up with an idea for a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities.",
-        "chips":[
-          "3rd Place"
-        ],
-        "links":[
-          {
-            "title":"news",
-            "link":""
-          }
-        ]
-      },
-      "bellatrix_hackathon_2019":{
-        "title":"Bellatrix Hackathon",
-        "subtitle":"Oct 6 2019",
-        "description":"We designed and developed a platform to raise awareness on climate change and it's consequences.",
-        "chips":[
-          "Finalists"
-        ],
-        "links":[
-          {
-            "title":"news",
-            "link":""
-          }
-        ]
-      },
-      "facebook_hackathon_2019":{
-        "title":"Facebook Hackathon",
-        "subtitle":"March 16 to March 17 - 2019",
-        "description":"We developed a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities and served as a global education history.",
-        "chips":[
-
-        ],
-        "links":[
-          {
-            "title":"information",
-            "link":""
-          }
-        ]
-      },
-      "global_gamejam_2019":{
-        "title":"Global Game Jam",
-        "subtitle":"January 25 to 27 - 2019",
-        "description":"Global Game Jam 2019 where the theme was 'Home'. With my team we created a small, quiet game that was intended to be an experience to make you feel at home. I took part as the main developer for the game.",
-        "chips":[
-
-        ],
-        "links":[
-          {
-            "title":"game",
-            "link":""
-          }
-        ]
-      },
-      "itba_gamejam_2018":{
-        "title":"ITBA Game Jam",
-        "subtitle":"September 28, 29 and 30 - 2018",
-        "description":"ITBA's Game Jam where the theme was 'It wasn't meant for that'. Alongside my team, we created a small, psychodelic game, where I took part as one of the two main developers.",
-        "chips":[
-
-        ],
-        "links":[
-          {
-            "title":"game",
-            "link":""
-          }
-        ]
-      },
-      "gmtk_gamejam_2019":{
-        "title":"GMTK Game Jam",
-        "subtitle":"Aug 3 - Aug 5 2019",
-        "description":"Game Makers Toolkit Game Jam 2019 where the theme was 'Only one'. We created a small game where you had one life to plan a jail break. I took part as one of the two main developers.",
-        "chips":[
-
-        ],
-        "links":[
-          {
-            "title":"game",
-            "link":""
-          }
-        ]
-      }
+    "middle": {
+        "love": "I <b style=\"color:lightcoral\">love</b>",
+        "building": "building <b>reliable</b>, <b>efficient</b>",
+        "software": "<b>software</b> and <b>experiences</b>",
+        "message": "My passion is building <b class=\"text-primary\">reliable</b>, <b class=\"text-primary\">efficient software</b> and <b class=\"text-primary\">experiences</b>",
+        "process": "My process",
+        "process_design": "Design",
+        "process_design_description": "Use the best software engineering practices and the UX process to come up with intuitive and efficient solutions in a very short period of time",
+        "process_build": "Build",
+        "process_build_description": "Use the best tools for each problem, in order to bring to life the designed solution and have a scalable product ",
+        "process_evaluate": "Evaluate",
+        "process_evaluate_description": "Thoroughly test the solution in order to find improvements and go back to the previous steps"
     },
-    "abilities":{
-      "title": "Abilities",
-      "programmingLanguages":{
-        "title":"Programming Languages",
-        "description": "<p style=\"padding-left:25px\"><b>Proficient</b> Java, C, Python and C#. <br/><b>Advanced</b> Javascript, Ruby. <br/><b>Intermediate/advanced</b> Octave, Matlab and Solidity.</p>"
-      },
-      "dbms":{
-        "title":"Database Management Systems",
-        "description": "Advanced PostgreSQL and Microsoft SQL Server."
-      },
-      "frameworks":{
-        "title":"Frameworks",
-        "description": "Advanced Vue.Js, .NET and ASP. Intermediate Selenium."
-      },
-      "specificSoftware":{
-        "title":"Specific Software",
-        "description": "Intermediate/advanced Unity. Intermediate Solidworks."
-      },
-      "languages":{
-        "title":"Languages",
-        "description": "High level english, both speaking and writing. Native spanish."
-      }
+    "contact": {
+        "send_me": "If you have something cool you want to work on, or have a project in mind, send me an email or contact me in the sites listed.",
+        "subject": "Subject",
+        "content": "Content",
+        "contact_me": "My Info",
+        "email": "hirschgonzalo@gmail.com",
+        "send": "Send",
+        "contact": "Let's create amazing things together"
     },
-    "education":{
-      "title": "Education",
-      "university":{
-        "title": "University",
-        "subtitle": "2017 - Now",
-        "description": "Software Engineering student at <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA)."
-      },
-      "internationalCertifications":{
-        "title": "International Certifications",
-        "subtitle": "",
-        "description": "Advanced Subsidiary in Maths and IT<br/>Diploma ICE<br/>B2 First"
-      }
+    "general": {
+        "experience": "Experience",
+        "cv": "CV",
+        "projects": "Projects",
+        "process": "Process",
+        "contact": "Contact",
+        "about": "About"
+    },
+    "bottom": {
+        "made": "Made with <3 by Gonzalo Hirsch"
+    },
+    "about": {
+        "title": "A little bit about me",
+        "paragraph1": "I'm a full-stack developer with {years} years of professional experience working in both front-end and back-end projects. I have a passion for technology, interesting ideas and teaching programming.",
+        "paragraph2": "I'm currently studying Software Engineering at the <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA), as well as working as a Full-Stack Developer doing Staff Augmentation, Digital Transformation and Software Development at a startup called <a href=\"https://www.newcombin.com\" class=\"special-link\" target=\"_blank\">NewCombin</a>. I'm also the vice president and co-founder of <a href=\"https://www.ieee.org\" class=\"special-link\" target=\"_blank\">IEEE</a>'s <a href=\"https://www.computer.org\" class=\"special-link\" target=\"_blank\">Computer Society</a> ITBA Argentina branch here in Buenos Aires, Argentina."
+    },
+    "experience": {
+        "job": {
+            "title": "Work Experience"
+        },
+        "achievements": {
+            "title": "Achievements & Events",
+            "jpmorgan_hackathon_2019": {
+                "title": "JP Morgan's Code for Good",
+                "subtitle": "May 3 to May 4 - 2019",
+                "description": "We developed, alongside my team, a suite of applications that aimed to assis an NGO (Junior Achievement) in helping children find a profession.",
+                "chips": [
+                    "Winner"
+                ],
+                "links": [{
+                    "title": "news",
+                    "link": ""
+                }]
+            },
+            "itba_hackathon_2018": {
+                "title": "ITBA Hackathon",
+                "subtitle": "Oct 6 2019",
+                "description": "We came up with an idea for a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities.",
+                "chips": [
+                    "3rd Place"
+                ],
+                "links": [{
+                    "title": "news",
+                    "link": ""
+                }]
+            },
+            "bellatrix_hackathon_2019": {
+                "title": "Bellatrix Hackathon",
+                "subtitle": "Oct 6 2019",
+                "description": "We designed and developed a platform to raise awareness on climate change and it's consequences.",
+                "chips": [
+                    "Finalists"
+                ],
+                "links": [{
+                    "title": "news",
+                    "link": ""
+                }]
+            },
+            "facebook_hackathon_2019": {
+                "title": "Facebook Hackathon",
+                "subtitle": "March 16 to March 17 - 2019",
+                "description": "We developed a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities and served as a global education history.",
+                "chips": [
+
+                ],
+                "links": [{
+                    "title": "information",
+                    "link": ""
+                }]
+            },
+            "global_gamejam_2019": {
+                "title": "Global Game Jam",
+                "subtitle": "January 25 to 27 - 2019",
+                "description": "Global Game Jam 2019 where the theme was 'Home'. With my team we created a small, quiet game that was intended to be an experience to make you feel at home. I took part as the main developer for the game.",
+                "chips": [
+
+                ],
+                "links": [{
+                    "title": "game",
+                    "link": ""
+                }]
+            },
+            "itba_gamejam_2018": {
+                "title": "ITBA Game Jam",
+                "subtitle": "September 28, 29 and 30 - 2018",
+                "description": "ITBA's Game Jam where the theme was 'It wasn't meant for that'. Alongside my team, we created a small, psychodelic game, where I took part as one of the two main developers.",
+                "chips": [
+
+                ],
+                "links": [{
+                    "title": "game",
+                    "link": ""
+                }]
+            },
+            "gmtk_gamejam_2019": {
+                "title": "GMTK Game Jam",
+                "subtitle": "Aug 3 - Aug 5 2019",
+                "description": "Game Makers Toolkit Game Jam 2019 where the theme was 'Only one'. We created a small game where you had one life to plan a jail break. I took part as one of the two main developers.",
+                "chips": [
+
+                ],
+                "links": [{
+                    "title": "game",
+                    "link": ""
+                }]
+            }
+        },
+        "abilities": {
+            "title": "Abilities",
+            "programmingLanguages": {
+                "title": "Programming Languages",
+                "description": "<p style=\"padding-left:25px\"><b>Proficient</b> Java, C, Python and C#. <br/><b>Advanced</b> Javascript, Ruby. <br/><b>Intermediate/advanced</b> Octave, Matlab and Solidity.</p>"
+            },
+            "dbms": {
+                "title": "Database Management Systems",
+                "description": "Advanced PostgreSQL and Microsoft SQL Server."
+            },
+            "frameworks": {
+                "title": "Frameworks",
+                "description": "Advanced Vue.Js, .NET and ASP. Intermediate Selenium."
+            },
+            "specificSoftware": {
+                "title": "Specific Software",
+                "description": "Intermediate/advanced Unity. Intermediate Solidworks."
+            },
+            "languages": {
+                "title": "Languages",
+                "description": "High level english, both speaking and writing. Native spanish."
+            }
+        },
+        "education": {
+            "title": "Education",
+            "university": {
+                "title": "University",
+                "subtitle": "2017 - Now",
+                "description": "Software Engineering student at <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA)."
+            },
+            "internationalCertifications": {
+                "title": "International Certifications",
+                "subtitle": "",
+                "description": "Advanced Subsidiary in Maths and IT<br/>Diploma ICE<br/>B2 First"
+            }
+        }
     }
-  }
 }

@@ -1,0 +1,123 @@
+.center-content {
+    padding: 150px 75px;
+    justify-content: center;
+    text-align: center;
+}
+
+.center-content-small {
+    padding: 150px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-element-invisible {
+    opacity: 0;
+    -webkit-animation-name: fade-out;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-out;
+    animation-duration: 0.3s;
+}
+
+.subtitle-element-invisible {
+    opacity: 0;
+    -webkit-animation-name: fade-out;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-out;
+    animation-duration: 0.3s;
+}
+
+.buttons-element-invisible {
+    opacity: 0;
+    -webkit-animation-name: fade-out;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-out;
+    animation-duration: 0.3s;
+}
+
+.title-element-visible {
+    opacity: 1;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+}
+
+.subtitle-element-visible {
+    opacity: 1;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+}
+
+.buttons-element-visible {
+    opacity: 1;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.greeting-name {
+    font-size: 4.5rem;
+}
+
+.greeting-sub {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+@media (max-width: 650px) {
+    .greeting-name {
+        font-size: 2.25rem;
+    }
+    .greeting-sub {
+        font-size: 1.25rem;
+        font-weight: lighter;
+    }
+    .rn-title {
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    .bottom-text {
+        font-size: 0.5rem;
+        font-weight: lighter;
+        color: black;
+    }
+}

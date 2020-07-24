@@ -1,17 +1,17 @@
 <template>
   <v-app>
-    <v-app-bar app color='white' light hide-on-scroll fixed flat>
+    <v-app-bar app :color='this.getGreetingVisibility ? "transparent" : "white"' light persistent fixed :flat='this.getGreetingVisibility'>
       <div class='d-flex align-center' @click='nameFunction'>
         <h1
           alt='Gonzalo Hirsch'
-          class='black--text shrink light-text'
+          :class='this.getGreetingVisibility ? "text-basic shrink light-text" : "text-primary shrink light-text"'
           contain
           width='40'
           v-if='$vuetify.breakpoint.xsOnly'
         >GH</h1>
         <h1
           alt='Gonzalo Hirsch'
-          class='black--text shrink light-text'
+          :class='this.getGreetingVisibility ? "text-basic shrink light-text" : "text-primary shrink light-text"'
           contain
           transition='scale-transition'
           v-else
@@ -22,27 +22,31 @@
       <h3
           @click='scroll'
           alt='Extra Name'
-          class='black--text light-text'
+          :class='this.getGreetingVisibility ? "text-basic light-text" : "text-primary light-text"'
           transition='scale-transition'
         >{{ isHome ? '' : extraName }}</h3>
       <v-spacer></v-spacer>
         <div v-if="!isScreenSmall">
             <v-btn
-              class="ma-1"
-              color="black darken-4"
-              @click.stop="navigateTo('Experience')"
+              :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
+              @click.stop="scrollTo('process')"
               dark
               text
-              >{{ $t('general.experience')}}</v-btn>
+              >{{ $t('general.process')}}</v-btn>
             <v-btn
-              class="ma-1"
-              color="black darken-4"
-              @click.stop="navigateTo('Projects')"
+              :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
+              @click.stop="scrollTo('about')"
               dark
               text
-              >{{ $t('general.projects')}}</v-btn>
+              >{{ $t('general.about')}}</v-btn>
+            <v-btn
+              :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
+              @click.stop="scrollTo('contact')"
+              dark
+              text
+              >{{ $t('general.contact')}}</v-btn>
         </div>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-else></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon :class='this.getGreetingVisibility ? "icon-basic" : "icon-primary"' @click.stop="drawer = !drawer" v-else></v-app-bar-nav-icon>
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
@@ -50,13 +54,15 @@
       light
       right
       temporary
+      class="hue-bg"
     >
     <v-layout align-center justify-space-between column fill-height>
        <h1
           alt='Gonzalo Hirsch'
-          class='black--text shrink light-text mt-4'
+          class='text-primary shrink light-text mt-4'
           contain
         >Gonzalo Hirsch</h1>
+        <!--
       <v-list
         nav
         class="text-center"
@@ -76,6 +82,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      -->
       <v-flex xs12 class="text-center">
       <v-btn
           outlined
@@ -94,7 +101,7 @@
           href='https://github.com/GonzaloHirsch'
           target='_blank'>
             <v-icon>
-              mdi-github-circle
+              mdi-github
             </v-icon>
           </v-btn>
           <v-btn
@@ -104,7 +111,7 @@
           href='https://www.linkedin.com/in/gonzalo-hirsch-5b4854155/'
           target='_blank'>
             <v-icon>
-              mdi-linkedin-box
+              mdi-linkedin
             </v-icon>
           </v-btn>
           </v-flex>
@@ -113,7 +120,7 @@
           </v-flex>
     </v-layout>
     </v-navigation-drawer>
-    <v-content>
+    <v-content style="padding: 0px;">
       <router-view/>
     </v-content>
     <Bottom/>
@@ -147,6 +154,10 @@ export default {
         left: 0,
         behavior: 'smooth'
       })
+    },
+    scrollTo: function (elem) {
+      const element = document.getElementById(elem)
+      element.scrollIntoView({ behavior: 'smooth' })
     },
     navigateTo: function (view) {
       if (this.$route.name !== view) {
@@ -188,6 +199,9 @@ export default {
       } else {
         return this.goToHome
       }
+    },
+    getGreetingVisibility: function () {
+      return this.$store.getters.greetingVisible
     }
   },
   mounted () {
@@ -197,8 +211,20 @@ export default {
 </script>
 <style>
 @import '/assets/styles/fonts.css';
+@import '/assets/styles/buttons.css';
+@import '/assets/styles/icons.css';
+@import '/assets/styles/general.css';
 
 .v-divider {
   line-height: 5em;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*.hue-bg {
+  background: linear-gradient(200deg, rgba(0, 0, 255, 0.25), rgba(255, 0, 0, 0.1));
+}*/
 </style>
