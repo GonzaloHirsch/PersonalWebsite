@@ -18,33 +18,39 @@
           width='100'
         >Gonzalo Hirsch</h1>
       </div>
-      <v-spacer></v-spacer>
+      <!-- <v-spacer></v-spacer>
       <h3
           @click='scroll'
           alt='Extra Name'
           :class='this.getGreetingVisibility ? "text-basic light-text" : "text-primary light-text"'
           transition='scale-transition'
-        >{{ isHome ? '' : extraName }}</h3>
+        >{{ isHome ? '' : extraName }}</h3> -->
       <v-spacer></v-spacer>
         <div v-if="!isScreenSmall">
             <v-btn
               :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
-              @click.stop="scrollTo('process')"
+              @click.stop="navFunction('process')"
               dark
               text
               >{{ $t('general.process')}}</v-btn>
             <v-btn
               :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
-              @click.stop="scrollTo('about')"
+              @click.stop="navFunction('about')"
               dark
               text
               >{{ $t('general.about')}}</v-btn>
             <v-btn
               :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
-              @click.stop="scrollTo('contact')"
+              @click.stop="navFunction('contact')"
               dark
               text
               >{{ $t('general.contact')}}</v-btn>
+            <v-btn
+              :class='this.getGreetingVisibility ? "ma-1 color-btn-borderless" : "ma-1 white-btn-borderless"'
+              @click.stop="navFunction('Projects')"
+              dark
+              text
+              >{{ $t('general.projects')}}</v-btn>
         </div>
       <v-app-bar-nav-icon :class='this.getGreetingVisibility ? "icon-basic" : "icon-primary"' @click.stop="drawer = !drawer" v-else></v-app-bar-nav-icon>
     </v-app-bar>
@@ -173,6 +179,21 @@ export default {
       } else {
         this.isHome = false
         this.extraName = this.$route.name
+      }
+    },
+    navFunction: function (target) {
+      if (this.isHome) {
+        if (target !== 'Projects') {
+          this.scrollTo(target)
+        } else {
+          this.navigateTo(target)
+        }
+      } else {
+        if (target !== 'Projects') {
+          this.goToHome()
+        } else {
+          this.navigateTo(target)
+        }
       }
     }
   },

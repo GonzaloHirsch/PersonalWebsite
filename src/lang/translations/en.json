@@ -41,7 +41,7 @@
     "about": {
         "title": "A little bit about me",
         "paragraph1": "I'm a full-stack developer with {years} years of professional experience working in both front-end and back-end projects. I have a passion for technology, interesting ideas and teaching programming.",
-        "paragraph2": "I'm currently studying Software Engineering at the <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA), as well as working as a Full-Stack Developer doing Staff Augmentation, Digital Transformation and Software Development at a startup called <a href=\"https://www.newcombin.com\" class=\"special-link\" target=\"_blank\">NewCombin</a>. I'm also the vice president and co-founder of <a href=\"https://www.ieee.org\" class=\"special-link\" target=\"_blank\">IEEE</a>'s <a href=\"https://www.computer.org\" class=\"special-link\" target=\"_blank\">Computer Society</a> ITBA Argentina branch here in Buenos Aires, Argentina."
+        "paragraph2": "I'm currently studying Software Engineering at the <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA), as well as working as a Full-Stack Developer doing freelance. I'm also the first and former vice president and co-founder of <a href=\"https://www.ieee.org\" class=\"special-link\" target=\"_blank\">IEEE</a>'s <a href=\"https://www.computer.org\" class=\"special-link\" target=\"_blank\">Computer Society</a> ITBA Argentina branch here in Buenos Aires, Argentina."
     },
     "experience": {
         "job": {
@@ -169,6 +169,18 @@
                 "subtitle": "",
                 "description": "Advanced Subsidiary in Maths and IT<br/>Diploma ICE<br/>B2 First"
             }
+        }
+    },
+    "projects": {
+        "title": "My Projects",
+        "explain": "These are some of the projects I have, there are many more in my Github page.",
+        "gol": {
+            "title": "Game of Life",
+            "explain": "The <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" class=\"special-link\" target=\"_blank\">Game of Life</a> is a zero-player celular automaton game, it means that given an initial configuration, it evolves all by itself.",
+            "instructions1": "Dark cells are dead, light cells are alive.",
+            "instructions2": "Click the cells to make them be alive/dead.",
+            "instructions3": "The play button runs the game, the stop button restarts the configuration.",
+            "addedOn": "Added on 2021-01-05"
         }
     }
 }

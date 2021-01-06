@@ -4,7 +4,7 @@
       justify-center
       wrap
     >
-<v-flex xs12 jus class="grey darken-3">
+<v-flex xs12 justify-center class="grey darken-3">
     <v-flex xs12 style="color: white" class="bottom-text">
     {{$t('bottom.made')}}. Copyright © 2020. All rights reserved.
     </v-flex>

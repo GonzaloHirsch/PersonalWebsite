@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/home/Home.vue'
 import Experience from '@/views/experience/Experience.vue'
 import Projects from '@/views/projects/Projects.vue'
+import GameOfLife from '@/views/projects/GameOfLife.vue'
 import RouterView from '@/views/RouterView.vue'
 import { i18n } from '@/main.js'
 
@@ -27,12 +28,13 @@ const routes = [
         component: Home
       },
       {
-        path: '/:lang/projects',
+        path: 'projects',
         name: 'Projects',
         component: Projects
       },
+      { path: 'projects/gol', name: 'GameOfLife', component: GameOfLife },
       {
-        path: '/:lang/experience',
+        path: 'experience',
         name: 'Experience',
         component: Experience
       }
