@@ -34,6 +34,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: dist
+    - name: Print the final result
+      shell: bash
+      run: |
+        value=`ls`
+        echo The result is $value
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
