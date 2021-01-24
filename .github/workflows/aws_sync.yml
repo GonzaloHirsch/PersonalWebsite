@@ -27,6 +27,7 @@ jobs:
         path: dist
   deploy:
     name: Project Deploy
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Download dist folder
