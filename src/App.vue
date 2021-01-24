@@ -16,7 +16,7 @@
           transition='scale-transition'
           v-else
           width='100'
-        >Gonzalo Hirsch TESTS</h1>
+        >Gonzalo Hirsch</h1>
       </div>
       <!-- <v-spacer></v-spacer>
       <h3
