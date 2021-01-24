@@ -24,6 +24,4 @@ yarn-error.log*
 
 .editorconfig
 
-.eslintrc.js
-
 package-lock.json

@@ -68,18 +68,17 @@
           class='text-primary shrink light-text mt-4'
           contain
         >Gonzalo Hirsch</h1>
-        <!--
       <v-list
         nav
         class="text-center"
       >
-        <v-list-item
+        <!-- <v-list-item
           @click.stop="navigateTo('Experience')"
         >
           <v-list-item-content>
             <v-list-item-title>{{ $t('general.experience') }}</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
         <v-list-item
           @click.stop="navigateTo('Projects')"
         >
@@ -88,16 +87,15 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      -->
       <v-flex xs12 class="text-center">
-      <v-btn
-          outlined
-          large
-          href='GonzaloHirsch-CV.pdf'
-          target="_blank">
-          Download CV
-          </v-btn>
-          </v-flex>
+        <v-btn
+            outlined
+            large
+            href='GonzaloHirsch-CV.pdf'
+            target="_blank">
+            {{ $t('general.downloadCV') }}
+            </v-btn>
+      </v-flex>
       <p class="text-center">{{ $t('contact.email')}}</p>
           <v-flex class="text-center">
             <v-btn

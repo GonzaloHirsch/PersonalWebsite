@@ -5,16 +5,16 @@
     </v-row>
     <v-col>
       <v-row justify='center' align='center'>
-        <span v-html="$t('projects.gol.explain')"/>
+        <span style="text-align: center" v-html="$t('projects.gol.explain')"/>
       </v-row>
       <v-row justify='center' align='center' class="mt-2">
-        <span>{{$t('projects.gol.instructions1')}}</span>
+        <span style="text-align: center">{{$t('projects.gol.instructions1')}}</span>
       </v-row>
       <v-row justify='center' align='center' class="mt-2">
-        <span>{{$t('projects.gol.instructions2')}}</span>
+        <span style="text-align: center">{{$t('projects.gol.instructions2')}}</span>
       </v-row>
       <v-row justify='center' align='center' class="mt-2">
-        <span>{{$t('projects.gol.instructions3')}}</span>
+        <span style="text-align: center">{{$t('projects.gol.instructions3')}}</span>
       </v-row>
     </v-col>
     <v-row justify='center' align='center' class="mt-1 mb-4">
@@ -42,7 +42,7 @@
       <template v-for="(col , colIdx) in row">
           <v-col :key="colIdx">
             <v-card
-              v-bind:class="[{'alive': col == 1 && !hover, 'dead': col == 0 && !hover}, 'grid-cell', 'flex-center']"
+              v-bind:class="[{'alive': col == 1, 'dead': col == 0}, 'grid-cell', 'flex-center']"
               elevation="6"
               dark
               outlined

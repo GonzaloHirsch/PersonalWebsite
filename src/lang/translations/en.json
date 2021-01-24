@@ -33,7 +33,8 @@
         "projects": "Projects",
         "process": "Process",
         "contact": "Contact",
-        "about": "About"
+        "about": "About",
+        "downloadCV": "Download CV"
     },
     "bottom": {
         "made": "Made with <3 by Gonzalo Hirsch"
