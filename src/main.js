@@ -1,27 +1,40 @@
 import Vue from 'vue'
-import VueObserveVisibility from 'vue-observe-visibility'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import vuetify from './plugins/vuetify'
 import VueI18n from 'vue-i18n'
+import './index.css'
 import messages from './lang'
+
+import getBrowserLocale from '@/lang/getBrowserLocale'
+import { supportedLocalesInclude } from '@/lang/supportedLocales'
 
 Vue.config.productionTip = false
 
-Vue.use(VueI18n)
-export const i18n = new VueI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
-  messages
-})
+// i18n get starting locale
+function getStartingLocale() {
+  const browserLocale = getBrowserLocale({ countryCodeOnly: true })
 
-Vue.use(VueObserveVisibility)
+  if (supportedLocalesInclude(browserLocale)) {
+    return browserLocale
+  } else {
+    return process.env.VUE_APP_I18N_LOCALE || 'en'
+  }
+}
+
+// Add i18n
+Vue.use(VueI18n)
+
+// Configure i18n
+export const i18n = new VueI18n({
+  locale: getStartingLocale(),
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+  messages: messages
+})
 
 new Vue({
   router,
   store,
-  vuetify,
   i18n,
   render: h => h(App)
 }).$mount('#app')
