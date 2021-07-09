@@ -1,9 +1,9 @@
 {
     "nav": {
-        "about": "About",
-        "experience": "Experience",
-        "passion": "Passion",
-        "projects": "Projects",
-        "contact": "Contact"
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "passion": "Pasión",
+        "projects": "Proyectos",
+        "contact": "Contacto"
     }
 }

@@ -1,9 +1,30 @@
 {
     "nav": {
-        "about": "About",
+        "about": "About Me",
         "experience": "Experience",
         "passion": "Passion",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "button_cv": {
+            "text": "CV",
+            "aria": "Download my curriculum"
+        },
+        "button_email": {
+            "text": "Send an Email",
+            "aria": "Send me an email"
+        }
+    },
+    "hero": {
+        "overtitle": "Hi, my name is",
+        "subtitle": "I'm an Argentina-based <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Software Engineering Student</strong> and <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Full-Stack Developer</strong> focused on developing clean, user-friendly, and fast experiences.",
+        "button": {
+            "text": "CV",
+            "aria": "Download my curriculum"
+        }
+    },
+    "footer": {
+        "made_by": "Made with <svg class=\"mx-1\" style=\"width:24px;height:24px\" viewBox=\"0 0 24 24\"><path class=\"text-background_light dark:text-background_dark\" fill=\"currentColor\" d=\"M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z\" /></svg> by Gonzalo Hirsch",
+        "experience_light": "Experience Light Mode",
+        "experience_dark": "Experience Dark Mode"
     }
 }

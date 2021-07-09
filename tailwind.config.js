@@ -37,6 +37,7 @@ module.exports = {
         'h3': '2rem',
         'h4': '1.5rem',
         'h5': '1.25rem',
+        'highlight-sm': '3.5rem',
         'h1-sm': '3rem',
         'h2-sm': '2.25rem',
         'h3-sm': '1.75rem',
@@ -52,6 +53,7 @@ module.exports = {
         'h3': '2.25rem',
         'h4': '1.75rem',
         'h5': '1.5rem',
+        'highlight-sm': '3.75rem',
         'h1-sm': '3.25rem',
         'h2-sm': '2.5rem',
         'h3-sm': '2rem',
@@ -59,7 +61,7 @@ module.exports = {
         'h5-sm': '1.5rem',
       },
       padding: {
-        'section-x-sm': '3rem',
+        'section-x-sm': '1.5rem',
         'section-x': '5rem',
         'section-y-sm': '3rem',
         'section-y': '5rem'

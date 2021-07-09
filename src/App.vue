@@ -1,41 +1,42 @@
 <template>
-  <div id="app" class="app dark:bg-background_dark">
+  <div id="app" :class="['app dark:bg-background_dark']">
     <v-nav :scrolled="hasScrolled"/>
-    <router-view class="router"></router-view>
-    <h2 @click="changeType">Footer</h2>
+    <router-view :class="['router']"></router-view>
+    <v-footer/>
   </div>
 </template>
 
 <script>
+import vFooter from '@/components/footer'
 import vNav from '@/components/nav'
 
 export default {
   name: 'App',
   components: {
+    vFooter,
     vNav
   },
   data: () => ({
     drawer: false,
     isHome: true,
     extraName: '',
-    hasScrolled: false,
-    theme: false
+    hasScrolled: false
   }),
   watch: {
     $route: function () {
       this.determineHome()
+    },
+    mobileMenuIsVisible: function () {
+      console.log(this.mobileMenuIsVisible)
+      const el = document.body
+      if (this.mobileMenuIsVisible) {
+        el.classList.add('overflow-y-hidden')
+      } else {
+        el.classList.remove('overflow-y-hidden')
+      }
     }
   },
   methods: {
-    changeType: function () {
-      console.log(this.theme)
-      this.theme = !this.theme
-      if (this.theme) {
-        document.querySelector('html').classList.remove('dark')
-      } else {
-        document.querySelector('html').classList.add('dark')
-      }
-    },
     scroll: function () {
       window.scrollTo({
         top: 0,
@@ -83,22 +84,6 @@ export default {
     }
   },
   computed: {
-    isScreenSmall: function () {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs':
-          return true
-        case 'sm':
-          return false
-        case 'md':
-          return false
-        case 'lg':
-          return false
-        case 'xl':
-          return false
-        default:
-          return false
-      }
-    },
     nameFunction: function () {
       if (this.isHome) {
         return this.scroll
@@ -108,6 +93,9 @@ export default {
     },
     getGreetingVisibility: function () {
       return this.$store.getters.greetingVisible
+    },
+    mobileMenuIsVisible: function () {
+      return this.$store.getters.menuVisible
     }
   },
   created () {
@@ -115,6 +103,9 @@ export default {
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
+  },
+  beforeMount () {
+    this.$store.dispatch('initTheme')
   },
   mounted () {
     this.determineHome()
