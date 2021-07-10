@@ -1,6 +1,15 @@
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+  plugins: [
+    require('tailwindcss')(),
+    require('@fullhuman/postcss-purgecss')({
+      content: [ `./public/**/*.html`, `./src/**/*.vue` ],
+      defaultExtractor (content) {
+        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
+        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+      },
+      whitelist: [],
+      whitelistPatterns: [ /list/, /bg-/, /^font-bold$/, /^text-/, /^mx-/, /^ml-/],
+    }),
+    require('autoprefixer')(),
+  ],
 }
