@@ -6,15 +6,11 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     app: {
-      greetingVisible: true,
       mobileMenuVisible: false,
       theme: undefined
     }
   },
   mutations: {
-    changeGreetingVisibility (state, payload) {
-      state.app.greetingVisible = payload
-    },
     changeMenuVisibility (state, payload) {
       state.app.mobileMenuVisible = payload
     },
@@ -24,9 +20,6 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    changeGreetingVisibility (context, payload) {
-      context.commit('changeGreetingVisibility', payload)
-    },
     changeMenuVisibility (context, payload) {
       context.commit('changeMenuVisibility', payload)
     },
@@ -54,9 +47,6 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    greetingVisible: state => {
-      return state.app.greetingVisible
-    },
     menuVisible: state => {
       return state.app.mobileMenuVisible
     },
