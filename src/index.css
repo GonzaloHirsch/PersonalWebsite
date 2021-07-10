@@ -64,7 +64,7 @@ p {
   @apply px-section-x-sm py-section-y-sm;
 }
 
-@screen sm {
+@screen md {
   .main-section {
     @apply px-section-x py-section-y;
   }

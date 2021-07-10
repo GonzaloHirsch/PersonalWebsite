@@ -1,5 +1,5 @@
 <template>
-  <a :class="[extraClass, format === 'white' ? 'button-white dark:border-brand_primary_dark dark:text-brand_primary_dark dark:hover:text-background_dark dark:hover:bg-brand_primary_dark' : 'button-primary dark:border-background_dark dark:text-background_dark dark:hover:text-brand_primary_dark dark:hover:bg-background_dark', 'button']" :aria-label="aria" :href="href" :target="target">{{text}}</a>
+  <a :class="[extraClass, format === 'white' ? 'button-white dark:border-brand_primary_dark dark:text-brand_primary_dark dark:hover:text-background_dark dark:hover:bg-brand_primary_dark' : (format === 'primary' ? 'button-primary dark:border-background_dark dark:text-background_dark dark:hover:text-brand_primary_dark dark:hover:bg-background_dark' : 'button-secondary dark:border-background_dark dark:text-background_dark dark:hover:text-brand_secondary_dark dark:hover:bg-background_dark') , 'button']" :aria-label="aria" :href="href" :target="target">{{text}}</a>
 </template>
 
 <script>
@@ -29,5 +29,13 @@ export default {
 
 .button-primary:hover {
     @apply text-brand_primary_light bg-white;
+}
+
+.button-secondary {
+    @apply border-2 border-white text-white bg-transparent;
+}
+
+.button-secondary:hover {
+    @apply text-brand_secondary_light bg-white;
 }
 </style>
