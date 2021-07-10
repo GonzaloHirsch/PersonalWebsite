@@ -1,187 +1,110 @@
 {
-    "greeting": {
-        "hi": "Welcome!",
-        "my": "My name is",
-        "name": "Gonzalo Hirsch",
-        "description": "I'm an Argentina based Software Engineering Student and Full-Stack Developer focused on developing clean, user-friendly and fast experiences"
-    },
-    "middle": {
-        "love": "I <b style=\"color:lightcoral\">love</b>",
-        "building": "building <b>reliable</b>, <b>efficient</b>",
-        "software": "<b>software</b> and <b>experiences</b>",
-        "message": "My passion is building <b class=\"text-primary\">reliable</b>, <b class=\"text-primary\">efficient software</b> and <b class=\"text-primary\">experiences</b>",
-        "process": "My process",
-        "process_design": "Design",
-        "process_design_description": "Use the best software engineering practices and the UX process to come up with intuitive and efficient solutions in a very short period of time",
-        "process_build": "Build",
-        "process_build_description": "Use the best tools for each problem, in order to bring to life the designed solution and have a scalable product ",
-        "process_evaluate": "Evaluate",
-        "process_evaluate_description": "Thoroughly test the solution in order to find improvements and go back to the previous steps"
-    },
-    "contact": {
-        "send_me": "If you have something cool you want to work on, or have a project in mind, send me an email or contact me in the sites listed.",
-        "subject": "Subject",
-        "content": "Content",
-        "contact_me": "My Info",
-        "email": "hirschgonzalo@gmail.com",
-        "send": "Send",
-        "contact": "Let's create amazing things together"
-    },
-    "general": {
+    "nav": {
+        "about": "About Me",
         "experience": "Experience",
-        "cv": "CV",
+        "passion": "Passion",
         "projects": "Projects",
-        "process": "Process",
         "contact": "Contact",
-        "about": "About",
-        "downloadCV": "Download CV"
+        "button_cv": {
+            "text": "CV",
+            "aria": "Download my curriculum"
+        },
+        "button_email": {
+            "text": "Send an Email",
+            "aria": "Send me an email"
+        }
     },
-    "bottom": {
-        "made": "Made with <3 by Gonzalo Hirsch"
+    "hero": {
+        "overtitle": "Hi! My name is",
+        "subtitle": "I'm an Argentina-based <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Software Engineering Student</strong> and <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Full-Stack Developer</strong> focused on developing clean, user-friendly, and fast experiences.",
+        "button": {
+            "text": "CV",
+            "aria": "Download my curriculum"
+        }
+    },
+    "footer": {
+        "made_by": "Made with <svg class=\"mx-1\" style=\"width:24px;height:24px\" viewBox=\"0 0 24 24\"><path class=\"text-background_light dark:text-background_dark\" fill=\"currentColor\" d=\"M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z\" /></svg> by Gonzalo Hirsch",
+        "experience_light": "Experience Light Mode",
+        "experience_dark": "Experience Dark Mode"
     },
     "about": {
-        "title": "A little bit about me",
-        "paragraph1": "I'm a full-stack developer with {years} years of professional experience working in both front-end and back-end projects. I have a passion for technology, interesting ideas and teaching programming.",
-        "paragraph2": "I'm currently studying Software Engineering at the <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA), as well as working as a Full-Stack Developer doing freelance. I'm also the first and former vice president and co-founder of <a href=\"https://www.ieee.org\" class=\"special-link\" target=\"_blank\">IEEE</a>'s <a href=\"https://www.computer.org\" class=\"special-link\" target=\"_blank\">Computer Society</a> ITBA Argentina branch here in Buenos Aires, Argentina."
+        "top": "I'm a full-stack developer with more than three years of professional experience working on front-end and back-end projects. I have a passion for technology, incredible ideas, and teaching programming.",
+        "bottom": "I study Software Engineering at the <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark dark:text-background_dark\" href=\"https://www.itba.edu.ar/\" target=\"_blank\" rel=\"noopener noreferer\">Instituto Tecnológico de Buenos Aires</a> (ITBA) and work as a Full-Stack Freelancer at <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://www.toptal.com/\" target=\"_blank\" rel=\"noopener noreferer\">Toptal</a>. I'm also the first and former vice president and co-founder of <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://www.ieee.org/\" target=\"_blank\" rel=\"noopener noreferer\">IEEE</a>'s <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://csitba.web.app/\" target=\"_blank\" rel=\"noopener noreferer\">Computer Society ITBA</a> Argentina branch here in Buenos Aires, Argentina."
+    },
+    "passion": {
+        "text": "My passion is building <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">reliable</strong>, <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">efficient software</strong> and <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">experiences</strong>."
     },
     "experience": {
-        "job": {
-            "title": "Work Experience"
-        },
-        "achievements": {
-            "title": "Achievements & Events",
-            "jpmorgan_hackathon_2019": {
-                "title": "JP Morgan's Code for Good",
-                "subtitle": "May 3 to May 4 - 2019",
-                "description": "We developed, alongside my team, a suite of applications that aimed to assis an NGO (Junior Achievement) in helping children find a profession.",
-                "chips": [
-                    "Winner"
-                ],
-                "links": [{
-                    "title": "news",
-                    "link": ""
-                }]
+        "title": "Experience",
+        "work": {
+            "winston": {
+                "position": "Front-End Developer",
+                "company": "The Winston Project (via Toptal)",
+                "date": "February 2021 - Now",
+                "description": "The Winston Project is a digital marketing consulting company based in New York, United States. Developed websites with fast development cycles for different US Universities using Gridsome (Vue.js) and Hugo (Go), and Tailwind CSS."
             },
-            "itba_hackathon_2018": {
-                "title": "ITBA Hackathon",
-                "subtitle": "Oct 6 2019",
-                "description": "We came up with an idea for a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities.",
-                "chips": [
-                    "3rd Place"
-                ],
-                "links": [{
-                    "title": "news",
-                    "link": ""
-                }]
+            "toptal": {
+                "position": "Full-Stack Freelancer",
+                "company": "Toptal",
+                "date": "January 2021 - Now",
+                "description": "Member of the Toptal community under the Core (Full-Stack) specialization."
             },
-            "bellatrix_hackathon_2019": {
-                "title": "Bellatrix Hackathon",
-                "subtitle": "Oct 6 2019",
-                "description": "We designed and developed a platform to raise awareness on climate change and it's consequences.",
-                "chips": [
-                    "Finalists"
-                ],
-                "links": [{
-                    "title": "news",
-                    "link": ""
-                }]
+            "cs": {
+                "position": "Co Founder and Vice President",
+                "company": "IEEE Computer Society ITBA",
+                "date": "September 2019 - July 2021",
+                "description": "In collaboration with the other founder grew the leadership team of the society from two to twenty people. Managed multiple teams to ensure events were carried out and sponsors contacted. Designed and taught two courses at the university: Introduction to Python and Django REST APIs."
             },
-            "facebook_hackathon_2019": {
-                "title": "Facebook Hackathon",
-                "subtitle": "March 16 to March 17 - 2019",
-                "description": "We developed a decentralized education platform built on the Ethereum Blockchain that aimed to facilitate exchanges between universities and served as a global education history.",
-                "chips": [
-
-                ],
-                "links": [{
-                    "title": "information",
-                    "link": ""
-                }]
-            },
-            "global_gamejam_2019": {
-                "title": "Global Game Jam",
-                "subtitle": "January 25 to 27 - 2019",
-                "description": "Global Game Jam 2019 where the theme was 'Home'. With my team we created a small, quiet game that was intended to be an experience to make you feel at home. I took part as the main developer for the game.",
-                "chips": [
-
-                ],
-                "links": [{
-                    "title": "game",
-                    "link": ""
-                }]
-            },
-            "itba_gamejam_2018": {
-                "title": "ITBA Game Jam",
-                "subtitle": "September 28, 29 and 30 - 2018",
-                "description": "ITBA's Game Jam where the theme was 'It wasn't meant for that'. Alongside my team, we created a small, psychodelic game, where I took part as one of the two main developers.",
-                "chips": [
-
-                ],
-                "links": [{
-                    "title": "game",
-                    "link": ""
-                }]
-            },
-            "gmtk_gamejam_2019": {
-                "title": "GMTK Game Jam",
-                "subtitle": "Aug 3 - Aug 5 2019",
-                "description": "Game Makers Toolkit Game Jam 2019 where the theme was 'Only one'. We created a small game where you had one life to plan a jail break. I took part as one of the two main developers.",
-                "chips": [
-
-                ],
-                "links": [{
-                    "title": "game",
-                    "link": ""
-                }]
+            "newcombin": {
+                "position": "Full-Stack Developer",
+                "company": "NewCombin",
+                "date": "December 2018 - August 2020",
+                "description": "Developed and designed an API for a digital payments platform (Java and AWS Services) and created a companion app for that platform (Apache Cordova and Vue.js). Developed a simple eCommerce app for a subscription magazine (C#, .NET, and ASP). Designed and managed databases for applications. Developed a mobile application to implement a proof-of-work system for a company."
             }
         },
-        "abilities": {
-            "title": "Abilities",
-            "programmingLanguages": {
-                "title": "Programming Languages",
-                "description": "<p style=\"padding-left:25px\"><b>Proficient</b> Java, C, Python and C#. <br/><b>Advanced</b> Javascript, Ruby. <br/><b>Intermediate/advanced</b> Octave, Matlab and Solidity.</p>"
+        "volunteer": {
+            "django": {
+                "position": "Teacher",
+                "company": "Programming REST APIs in Python with Django",
+                "date": "March 2021",
+                "description": "Designed and taught a course on how to create and develop REST APIs using Python and Django. The classes had approximately 100 attendants."
             },
-            "dbms": {
-                "title": "Database Management Systems",
-                "description": "Advanced PostgreSQL and Microsoft SQL Server."
-            },
-            "frameworks": {
-                "title": "Frameworks",
-                "description": "Advanced Vue.Js, .NET and ASP. Intermediate Selenium."
-            },
-            "specificSoftware": {
-                "title": "Specific Software",
-                "description": "Intermediate/advanced Unity. Intermediate Solidworks."
-            },
-            "languages": {
-                "title": "Languages",
-                "description": "High level english, both speaking and writing. Native spanish."
-            }
-        },
-        "education": {
-            "title": "Education",
-            "university": {
-                "title": "University",
-                "subtitle": "2017 - Now",
-                "description": "Software Engineering student at <a href=\"https://www.itba.edu.ar\" class=\"special-link\" target=\"_blank\">Buenos Aires Institue of Technology</a>(ITBA)."
-            },
-            "internationalCertifications": {
-                "title": "International Certifications",
-                "subtitle": "",
-                "description": "Advanced Subsidiary in Maths and IT<br/>Diploma ICE<br/>B2 First"
+            "python": {
+                "position": "Teacher",
+                "company": "Introduction to Programming in Python",
+                "date": "August 2019 - September 2019",
+                "description": "Taught a course (during multiple semesters) on an introduction to programming in Python. The classes had approximately 200 attendants."
             }
         }
     },
+    "contact": {
+        "title": "Let’s Build Together",
+        "message": "If you have something cool you want to work on or have a project in mind, send me an email or contact me on my social networks.",
+        "button": {
+            "text": "Send an Email",
+            "aria": "Send me an Email",
+            "subject": "I have an idea!"
+        }
+    },
     "projects": {
-        "title": "My Projects",
-        "explain": "These are some of the projects I have, there are many more in my Github page.",
-        "gol": {
-            "title": "Game of Life",
-            "explain": "The <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\" class=\"special-link\" target=\"_blank\">Game of Life</a> is a zero-player celular automaton game, it means that given an initial configuration, it evolves all by itself.",
-            "instructions1": "Dark cells are dead, light cells are alive.",
-            "instructions2": "Click the cells to make them be alive/dead.",
-            "instructions3": "The play button runs the game, the stop button restarts the configuration.",
-            "addedOn": "Added on 2021-01-05"
+        "title": "Projects",
+        "data": {
+            "redirect": {
+                "title": "Redirect API",
+                "description": "An API similar to bit.ly but under my domain (<code><strong>redirect.gonzalohirsch.com</strong></code>) used to add custom redirects to pages I want. It was built as a hobby using AWS services such as API Gateway, Lambda, DynamoDB, CloudFront, Route 53, and CloudWatch. Some example URLs are: <ul class=\"list-disc ml-8\"><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Toptal\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/toptal\" rel=\"noopener noreferer\">Toptal redirect</a></li><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Github\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/github\" rel=\"noopener noreferer\">Github redirect</a></li><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Linkedin\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/linkedin\" rel=\"noopener noreferer\">LinkedIn redirect</a></li></ul>"
+            },
+            "this_site": {
+                "title": "Personal Webpage",
+                "description": "This website is my portfolio, built using Vue.js and TailwindCSS as frontend frameworks. This page is hosted in an AWS S3 bucket, distributed using AWS CloudFront, and has DNS using AWS Route 53. All components are custom and natively made entirely using Vue and Tailwind. I included the ability to switch between light mode and dark mode, which is an incredible feature. This choice, stored in a cookie, is used to remember the user's decision."
+            },
+            "playground_site": {
+                "title": "Playground Webpage",
+                "description": "A <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to my playground\" target=\"_blank\" href=\"https://playground.gonzalohirsch.com/\" rel=\"noopener noreferer\">custom website</a>, under a subdomain, that I use as a playground for tests. This site is currently a playground for tests using Tailwind CSS and some cool animations created with the framework."
+            },
+            "ai_ml": {
+                "title": "AI and ML",
+                "description": "This <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to this repository\" target=\"_blank\" href=\"https://github.com/GonzaloHirsch/sia-tps\" rel=\"noopener noreferer\">repository</a> contains implementations of multiple Neural Network designs and some search algorithms such as A*. Each codebase focuses on solving a particular problem. Neural Network designs are single perceptron, multilayer perceptron, Kohonen network, Oja network, and Autoencoders."
+            }
         }
     }
 }

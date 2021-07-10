@@ -1,0 +1,38 @@
+[
+    {
+        "position": "experience.work.winston.position",
+        "company": "experience.work.winston.company",
+        "date": "experience.work.winston.date",
+        "description": "experience.work.winston.description"
+    },
+    {
+        "position": "experience.work.toptal.position",
+        "company": "experience.work.toptal.company",
+        "date": "experience.work.toptal.date",
+        "description": "experience.work.toptal.description"
+    },
+    {
+        "position": "experience.work.cs.position",
+        "company": "experience.work.cs.company",
+        "date": "experience.work.cs.date",
+        "description": "experience.work.cs.description"
+    },
+    {
+        "position": "experience.work.newcombin.position",
+        "company": "experience.work.newcombin.company",
+        "date": "experience.work.newcombin.date",
+        "description": "experience.work.newcombin.description"
+    },
+    {
+        "position": "experience.volunteer.django.position",
+        "company": "experience.volunteer.django.company",
+        "date": "experience.volunteer.django.date",
+        "description": "experience.volunteer.django.description"
+    },
+    {
+        "position": "experience.volunteer.python.position",
+        "company": "experience.volunteer.python.company",
+        "date": "experience.volunteer.python.date",
+        "description": "experience.volunteer.python.description"
+    }
+]
