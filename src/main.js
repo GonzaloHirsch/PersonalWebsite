@@ -12,7 +12,7 @@ import { supportedLocalesInclude } from '@/lang/supportedLocales'
 Vue.config.productionTip = false
 
 // i18n get starting locale
-function getStartingLocale() {
+function getStartingLocale () {
   const browserLocale = getBrowserLocale({ countryCodeOnly: true })
 
   if (supportedLocalesInclude(browserLocale)) {
