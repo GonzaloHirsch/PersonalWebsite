@@ -1,0 +1,18 @@
+[
+    {
+        "title": "projects.data.redirect.title",
+        "description": "projects.data.redirect.description"
+    },
+    {
+        "title": "projects.data.this_site.title",
+        "description": "projects.data.this_site.description"
+    },
+    {
+        "title": "projects.data.playground_site.title",
+        "description": "projects.data.playground_site.description"
+    },
+    {
+        "title": "projects.data.ai_ml.title",
+        "description": "projects.data.ai_ml.description"
+    }    
+]

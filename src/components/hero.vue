@@ -40,7 +40,7 @@ export default {
 }
 
 .hero-image-wrapper {
-  @apply w-full flex flex-row justify-end relative;
+  @apply w-full flex flex-row justify-end relative z-0;
 }
 
 .hero-image {

@@ -85,5 +85,26 @@
             "aria": "Send me an Email",
             "subject": "I have an idea!"
         }
+    },
+    "projects": {
+        "title": "Projects",
+        "data": {
+            "redirect": {
+                "title": "Redirect API",
+                "description": "An API similar to bit.ly but under my domain (<code><strong>redirect.gonzalohirsch.com</strong></code>) used to add custom redirects to pages I want. It was built as a hobby using AWS services such as API Gateway, Lambda, DynamoDB, CloudFront, Route 53, and CloudWatch. Some example URLs are: <ul class=\"list-disc ml-8\"><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Toptal\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/toptal\" rel=\"noopener noreferer\">Toptal redirect</a></li><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Github\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/github\" rel=\"noopener noreferer\">Github redirect</a></li><li><a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to Linkedin\" target=\"_blank\" href=\"http://redirect.gonzalohirsch.com/linkedin\" rel=\"noopener noreferer\">LinkedIn redirect</a></li></ul>"
+            },
+            "this_site": {
+                "title": "Personal Webpage",
+                "description": "This website is my portfolio, built using Vue.js and TailwindCSS as frontend frameworks. This page is hosted in an AWS S3 bucket, distributed using AWS CloudFront, and has DNS using AWS Route 53. All components are custom and natively made entirely using Vue and Tailwind. I included the ability to switch between light mode and dark mode, which is an incredible feature. This choice, stored in a cookie, is used to remember the user's decision."
+            },
+            "playground_site": {
+                "title": "Playground Webpage",
+                "description": "A <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to my playground\" target=\"_blank\" href=\"https://playground.gonzalohirsch.com/\" rel=\"noopener noreferer\">custom website</a>, under a subdomain, that I use as a playground for tests. This site is currently a playground for tests using Tailwind CSS and some cool animations created with the framework."
+            },
+            "ai_ml": {
+                "title": "AI and ML",
+                "description": "This <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:text-background_dark dark:hover:bg-brand_secondary_dark\" aria-label=\"Go to this repository\" target=\"_blank\" href=\"https://github.com/GonzaloHirsch/sia-tps\" rel=\"noopener noreferer\">repository</a> contains implementations of multiple Neural Network designs and some search algorithms such as A*. Each codebase focuses on solving a particular problem. Neural Network designs are single perceptron, multilayer perceptron, Kohonen network, Oja network, and Autoencoders."
+            }
+        }
     }
 }
