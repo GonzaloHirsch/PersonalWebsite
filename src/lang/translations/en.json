@@ -26,5 +26,12 @@
         "made_by": "Made with <svg class=\"mx-1\" style=\"width:24px;height:24px\" viewBox=\"0 0 24 24\"><path class=\"text-background_light dark:text-background_dark\" fill=\"currentColor\" d=\"M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z\" /></svg> by Gonzalo Hirsch",
         "experience_light": "Experience Light Mode",
         "experience_dark": "Experience Dark Mode"
+    },
+    "about": {
+        "top": "I'm a full-stack developer with more than three years of professional experience working on front-end and back-end projects. I have a passion for technology, incredible ideas, and teaching programming.",
+        "bottom": "I study Software Engineering at the <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark dark:text-background_dark\" href=\"https://www.itba.edu.ar/\" target=\"_blank\" rel=\"noopener noreferer\">Instituto Tecnológico de Buenos Aires</a> (ITBA) and work as a Full-Stack Freelancer at <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://www.toptal.com/\" target=\"_blank\" rel=\"noopener noreferer\">Toptal</a>. I'm also the first and former vice president and co-founder of <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://www.ieee.org/\" target=\"_blank\" rel=\"noopener noreferer\">IEEE</a>'s <a class=\"text-white font-bold hover:bg-brand_secondary_light dark:hover:bg-brand_secondary_dark hover:bg-gradient-to-r from-brand_secondary_light dark:text-background_dark\" href=\"https://csitba.web.app/\" target=\"_blank\" rel=\"noopener noreferer\">Computer Society ITBA</a> Argentina branch here in Buenos Aires, Argentina."
+    },
+    "passion": {
+        "text": "My passion is building <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">reliable</strong>, <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">efficient software</strong> and <strong class=\"text-brand_primary_light dark:text-brand_primary_dark\">experiences</strong>."
     }
 }

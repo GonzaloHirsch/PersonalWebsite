@@ -2,6 +2,13 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      'brand_primary_light': '#124BCF',
+      'brand_secondary_light': '#12A9CF',
+      'brand_primary_dark': '#DF9A2C',
+      'brand_secondary_dark': '#df412c'
+    }),
     extend: {
       rotate: {
         "-48": "-48deg",
@@ -70,6 +77,42 @@ module.exports = {
         // One example using shadow-lg -> shadow-lg-invert
         'dark-shadow': '0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05)',
       },
+      translate: {
+        '100': '25rem',
+        '104': '26rem',
+        '108': '27rem',
+        '112': '28rem',
+        '116': '29rem',
+        '120': '30rem',
+        '124': '31rem',
+        '128': '32rem',
+        '132': '33rem',
+        '136': '34rem',
+        '140': '35rem',
+        '144': '36rem',
+        '148': '37rem',
+        '152': '38rem',
+        '168': '42rem',
+        '184': '46rem',
+        '200': '50rem',
+        '-100': '-25rem',
+        '-104': '-26rem',
+        '-108': '-27rem',
+        '-112': '-28rem',
+        '-116': '-29rem',
+        '-120': '-30rem',
+        '-124': '-31rem',
+        '-128': '-32rem',
+        '-132': '-33rem',
+        '-136': '-34rem',
+        '-140': '-35rem',
+        '-144': '-36rem',
+        '-148': '-37rem',
+        '-152': '-38rem',
+        '-168': '-42rem',
+        '-184': '-46rem',
+        '-200': '-50rem'
+      }
     },
   },
   variants: {

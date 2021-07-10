@@ -1,16 +1,22 @@
 <template>
   <main>
-      <v-hero/>
+    <v-hero/>
+    <v-about/>
+    <v-passion/>
   </main>
 </template>
 
 <script>
+import vAbout from '@/components/about'
 import vHero from '@/components/hero'
+import vPassion from '@/components/passion'
 
 export default {
   name: 'Home',
   components: {
-    vHero
+    vAbout,
+    vHero,
+    vPassion
   }
 }
 </script>
