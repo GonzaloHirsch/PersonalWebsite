@@ -15,7 +15,7 @@
         }
     },
     "hero": {
-        "overtitle": "Hi, my name is",
+        "overtitle": "Hi! My name is",
         "subtitle": "I'm an Argentina-based <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Software Engineering Student</strong> and <strong class=\"text-brand_primary_light transition duration-300 dark:text-brand_primary_dark\">Full-Stack Developer</strong> focused on developing clean, user-friendly, and fast experiences.",
         "button": {
             "text": "CV",

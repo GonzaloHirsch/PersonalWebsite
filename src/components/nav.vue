@@ -30,8 +30,8 @@
                   <li class="nav-list-link-mobile-wrapper"><a class="nav-list-link-mobile dark:text-background_dark dark:hover:text-brand_primary_dark dark:hover:bg-background_dark" aria-label="Go to Projects" href="#projects" >{{ $t('nav.projects')}}</a></li>
                   <li class="nav-list-link-mobile-wrapper"><a class="nav-list-link-mobile dark:text-background_dark dark:hover:text-brand_primary_dark dark:hover:bg-background_dark" aria-label="Go to Contact" href="#contact" >{{ $t('nav.contact')}}</a></li>
               </ul>
-              <v-button class="mt-2 mx-auto" :text="$t('nav.button_cv.text')" :aria="$t('nav.button_cv.aria')" href="/GonzaloHirsch-CV.pdf" target="_blank"/>
-              <v-button class="mt-4 mx-auto" :text="$t('nav.button_email.text')" :aria="$t('nav.button_email.aria')" href="mailto:hirschgonzalo@gmail.com" target="_blank"/>
+              <v-button class="mt-2 mx-auto" :text="$t('nav.button_cv.text')" :aria="$t('nav.button_cv.aria')" href="/GonzaloHirsch-CV.pdf" target="_blank" format="primary"/>
+              <v-button class="mt-4 mx-auto" :text="$t('nav.button_email.text')" :aria="$t('nav.button_email.aria')" href="mailto:hirschgonzalo@gmail.com" target="_blank" format="primary"/>
             </div>
             <div class="nav-mobile-menu-social-wrapper">
               <div class="nav-mobile-menu-social-icons">
