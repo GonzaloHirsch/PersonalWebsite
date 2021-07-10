@@ -8,7 +8,8 @@ module.exports = {
         return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
       },
       whitelist: [],
-      whitelistPatterns: [ /list/, /bg-/, /^font-bold$/, /^text-/, /^mx-/, /^ml-/],
+      whitelistPatterns: [ /list/, /^bg-/, /^hover:bg-/, /^dark:hover:bg-/, /^dark:bg-/, /^font-bold$/, /^text-/, /^hover:text-/, /^dark:hover:text-/, /^dark:text-/, /^mx-/, /^ml-/],
+      safelist: [ /list/, /^bg-/, /^hover:bg-/, /^dark:hover:bg-/, /^dark:bg-/, /^font-bold$/, /^text-/, /^hover:text-/, /^dark:hover:text-/, /^dark:text-/, /^mx-/, /^ml-/]
     }),
     require('autoprefixer')(),
   ],

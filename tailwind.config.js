@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  purge: {
+    content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+    safelist: [
+      /list/, /^bg-/, /^hover:bg-/, /^dark:hover:bg-/, /^dark:bg-/, /^font-bold$/, /^text-/, /^hover:text-/, /^dark:hover:text-/, /^dark:text-/, /^mx-/, /^ml-/
+    ]
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     gradientColorStops: theme => ({
