@@ -47,9 +47,6 @@ export default {
   },
   beforeMount () {
     this.$store.dispatch('initTheme')
-  },
-  mounted () {
-    this.determineHome()
   }
 }
 </script>
