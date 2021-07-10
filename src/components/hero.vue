@@ -7,7 +7,7 @@
         <v-button class="hero-text-button hidden md:block" :text="$t('hero.button.text')" :aria="$t('hero.button.aria')" href="/GonzaloHirsch-CV.pdf" target="_blank" format="white"/>
       </div>
       <div class="hero-image-wrapper">
-        <img class="hero-image" :src="heroImg" alt="Gonzalo Hirsch">
+        <img class="hero-image" :src="heroImg" width="590" height="430" alt="Gonzalo Hirsch">
         <div class="hero-image-overlay dark:bg-brand_primary_dark"/>
       </div>
   </section>
